@@ -1,4 +1,5 @@
-from src.tools.tools import web_search,scrape_url
+from src.pipeline.pipeline import run_research_pipeline
 
-result=web_search.invoke("top 10 dsa patterns")
-print(result)
+
+topic = "The impact of AI on ICPC"
+run_research_pipeline(topic)
